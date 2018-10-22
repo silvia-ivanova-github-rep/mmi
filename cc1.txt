@@ -1,0 +1,95 @@
+die Fachleute von morgen auf Fragen vorzubereiten, die nicht immer schneller, besser oder mit mehr Technologie beantwortet werden können
+
+--Motivation---
+
+1. Die Technologie muss das Technologiedesign wiederspiegeln
+ 	-wegen ethischen Gründen und
+	-wegen dem Verständnis dass die Folgen einer solchen Verwendung tragen zur Verbesserung des Design bei
+
+2. 
+	- Die meisten Informatik-Majors erwarten, die Ausbildung in der Industrie zu verwenden
+	- Die Informatiker in der Industrie stellen Fragen, die nicht präzise mathematisch und genau beantwortet werden können
+ 	z.b. Wer ist verantwortlich, wenn Fehler in medizinischer Software auftreten und wenn Patienten sterben?
+
+3. Die Stundenten sind nicht für solche Probleme vorbereitet
+
+--Project ImpactCS-----
+	- versucht zu definieren:
+		der Kerninhalt und die pädagogischen Ziele für Integration von sozialer Wirkung und Ethik in den Computer 
+		Lehrplan für Naturwissenschaften	
+	- findet und analysiert 3 größe Probleme
+		1) Fehlen der spezifischen Definition, was der Kerninhalt und die Lernziele sind
+		2) Fehlen von Strategie zur Anpassung und Übernahme bestehender Materialien
+		3) Mangel an Fachwissen für solchen Materialien in solchen Kursen
+1. Stage (1994, 25 experts (Philosophen, soziale Wissenschaftler, Ethiker und Computer Wissenschaftsprofessoren)
+	- werden die konzeptionellen Rahmen diskutiert, die umfasst:
+		die pädagogischen Ziele und
+		eine Datenbank von Themen und Lehrmethoden
+----Conceptual Framework ----
+	- jede ethische Angelegenheit lokalisiert auf einer bestimmten Ebene der sozialen Analyse
+	- Nur eine Analyse, die mindestens drei Dimensionen berücksichtigt - technische, sozial und ethisch - kann 
+	  die Probleme aus dem Praxis darstellen
+Figure 1//// 
+++1. Erste Frage: Welche Themen, Prinzipien und Fähigkeiten sind für Informatikstudenten relevant?
+	Individuals
+		- Organisationen wenden keine universellen Ansätze für Technologie an
+		- Computerprofis müssen wissen, wie sich ihre Entscheidungen auf die Benutzer auswirken 
+	Communities and Groups
+		- Technologie ist für die Nutzung durch Gruppen von Menschen konzipiert
+		- Technologie dient um die Leute zu verbinden
+		- Computerprofis arbeiten normalerweise in Teams
+		- Bei der Arbeit in Gruppen und bei der Entwicklung von Technologien, die von Gruppen verwendet werden, müssen Computerfachleute mit sozialen Interaktionen umgehen
+
+	Organizations
+		- Unterschiede:
+			• Organisationsstruktur und Kultur;
+			• Arbeitsplatzverfahren;
+			• Befugnisse und Interessengebiete der Mitglieder; und
+			• Position der Mitglieder in der Unternehmenshierarchie
+		- wenn die Produktion eine höhere Priorität als die Qualität hat:
+			führt das zu schlechter Qualität von Computerprodukten und -diensten oder 
+			unsicheren Systemen
+	Kulturelle Unterschiede
+		- Beispiele für kulturelle Gruppen: Hacker und Computerprofis
+		- Designer von Systemen, die wahrscheinlich in mehreren Kulturen verwendet werden, müssen die unterschiedlichen Ansätze jeder Kultur verstehen
+		- Die Anerkennung authentischer kultureller Unterschiede - anstatt sich auf Stereotypen zu verlassen - hilft Designern, Systeme zu entwickeln und zu implementieren, die allgemein akzeptiert und vielleicht sogar sicherer sind, wenn sie in anderen Kulturen als denen des Designers verwendet werden
+
+	Institutionen
+		- Die Interessen verschiedener Institutionen in verschiedenen Kulturen sind unterschiedlich
+		- Technologien werden von verschiedenen Institutionen für unterschiedliche Ziele genutzt
+
+	Global vs. Local
+		- Ethische Fragen in der Informatik hängen mit der nationalen und internationalen Szene zusammen
+++2 //Fig1 Topics of Ethical Analysis
+	Individuelle und berufliche Verantwortung
+		- Zu den individuellen Verantwortlichkeiten gehört die Moral Imperative im ACM-Ethikkodex, wie zum Beispiel:
+			• Schaden für andere vermeiden;
+			• Ehrlichkeit
+			• Gerechtigkeit
+			• Maßnahmen ergreifen, um nicht zu diskriminieren
+
+	Privacy
+		- Computerspezialisten entwerfen Systeme, die Daten über Personen sammeln, speichern und übertragen. 
+		- Frage: welche Daten über die Benutzer eines Systems sollen und dürfen gesammelt werden
+
+---Fig 3  Ethical Principles--
+	Ethische Ansprüche müssen mit Gründen verteidigt werden
+		- Studenten müssen ihre Meinungen und Entscheidungen begründen
+Ethische Fähigkeiten
+	- Argumentieren von Beispiel, Analogie und Gegenbeispiel
+	- Identifikation ethischer Prinzipien und Stakeholder
+	- Identifizieren und Bewerten alternativer Handlungsoptionen
+
+Prinzipien aus der Sozialanalyse
+	- Sozialer Kontext beeinflusst das Design und den Einsatz von Technologie
+
+Empirische Daten sind entscheidend für den Entwurfsprozess
+	- Ein guter Designer versucht jede Situation zu kennen, in der die Software oder die Hardware verwendet wird, anstatt sich auf Vermutungen, Spekulationen oder Optimismus zu verlassen
+
+Teaching Topics, Principles, and Skills 	
+	In the Lab:
+		- Instruktoren sollen in ihren Kursen auf zwei Arten die Arbeit im Labor integrieren:
+			1) Einbeziehung von ethischen und sozialen Fragen in der Laborarbeit 
+			2) Durch Kurse, die sich auf ethische und soziale Probleme im Computerbereich konzentrieren
+Integration in den Lehrplan
+		- Voller Kurs in ethischen und sozialen Fragen in der EDV
