@@ -1,0 +1,97 @@
+'http://www.snb-vba.eu/VBA_Outlook_external_en.html#L_10
+
+Public Const folderID = "000000009A949D1F0E32AC4FA492FE187C1300B001002E6CAC1447B86F44BAB28D37BCA64544000000002E260000"
+
+Sub add_Appointment()
+Dim oApp As Object
+Dim oNameSpace As Namespace
+Dim oFolder As Object
+
+Set oApp = New Outlook.Application
+Set oNameSpace = oApp.GetNamespace("MAPI")
+Set oFolder = oNameSpace.GetFolderFromID(folderID)
+
+    With oFolder
+         With oApp.CreateItem(olAppointmentItem) ' oApp.CreateItem(olAppointmentItem) = oApp.CreateItem(1)
+                    .Subject = "Subj"
+                    .Start = DateValue("02-01-2019") + TimeValue("12:30")
+                    .Duration = 45
+                    .Location = "Loc"
+                    .body = "Body"
+                    .Save
+                    .Move oFolder
+         End With
+    End With
+End Sub
+
+'Need to know the subject of the appointment
+Sub read_Appointment()
+c00 = "Subj"
+
+locStr = CreateObject("Outlook.Application").GetNamespace("MAPI").GetFolderFromID(folderID).Items(c00).Location
+Start = CreateObject("Outlook.Application").GetNamespace("MAPI").GetFolderFromID(folderID).Items(c00).Start
+
+End Sub
+
+'Deletes one appointment
+'if multiple appointments with the same subject -> the methods needs to be runned multiple times
+Sub delete_Appointment()
+c00 = "Subj" 'Subject
+c01 = CreateObject("Outlook.Application").GetNamespace("MAPI").GetFolderFromID(folderID).Items(c00).Delete
+End Sub
+
+'deletes an appointment where the Location is known
+Sub delete_Appointments_Known_Location()
+c01 = "Loc"
+c00 = "[Location]='" & c01 & "'"
+    For Each it In CreateObject("Outlook.Application").GetNamespace("MAPI").GetFolderFromID(folderID).Items.Restrict(c00)
+        it.Delete
+    Next
+End Sub
+
+'change date, location
+Sub appointment_Filter_Update()
+c01 = "Subj" 'subject
+c02 = "Loc" 'Location
+c00 = "[Location]='" & c02 & "'" 'Current location
+
+c03 = "Location" 'New location
+
+For Each it In CreateObject("Outlook.Application").GetNamespace("MAPI").GetFolderFromID(folderID).Items.Restrict(c00)
+    it.Location = c03
+    it.Start = DateAdd("d", -1, it.Start)
+    it.Save
+Next
+End Sub
+
+Private Sub getFolderID()
+     'Determines the Folder ID of Folder
+    Dim olFolder As Outlook.MAPIFolder
+    Dim olApp As Outlook.Application
+    Set olApp = CreateObject("Outlook.Application")
+    Set olFolder = olApp.GetNamespace("MAPI").PickFolder
+    
+    'Display the explorer with folders
+    olFolder.Display
+    
+    'The location number will be displayed in cell A1 so that you can easily copy the long number
+    Range("A1").Value = (olFolder.EntryID)
+    Set olFolder = Nothing
+    Set olApp = Nothing
+End Sub
+
+'Find all subjects from dates (02.01.2019-09.01.2019)
+Sub appointments_Find()
+On Error Resume Next
+c01 = "02-01-2019 12:30"
+c00 = "[Start]>='" & Format(c01, "ddddd hh:mm") & "' And [Start]<='" & Format(DateAdd("d", 7, c01), "ddddd hh:mm") & "'"
+
+    With CreateObject("Outlook.Application").GetNamespace("MAPI").GetFolderFromID(folderID).Items
+    c02 = .Find(c00).Subject
+    
+        Do Until Err.Number > 0
+        c02 = .FindNext.Subject
+        Debug.Print c02
+        Loop
+    End With
+End Sub
