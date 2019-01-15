@@ -1,8 +1,0 @@
-Info Ling (Grammatik+Lexikon) - http://www.cis.uni-muenchen.de/people/schuster/cl1/skript.pdf
-
-
-Latex overleaf template research report: https://v1.overleaf.com/21446553xtsgcrbmkbpq#/74029357/
-
-
-SQL tutorial   
-https://bg.khanacademy.org/computing/computer-programming/sql/relational-queries-in-sql/pc/challenge-friendbook
